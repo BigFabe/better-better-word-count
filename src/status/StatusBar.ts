@@ -21,7 +21,7 @@ export default class StatusBar {
     this.plugin = plugin;
     this.debounceStatusBarUpdate = debounce(
       (text: string) => this.updateStatusBar(text),
-      20,
+      100,
       false
     );
 

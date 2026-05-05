@@ -4,7 +4,7 @@ import commonjs from "@rollup/plugin-commonjs";
 import copy from "rollup-plugin-copy";
 import svelte from "rollup-plugin-svelte";
 import sveltePreprocess from "svelte-preprocess";
-const TEST_VAULT = "test-vault/.obsidian/plugins/better-word-count";
+const TEST_VAULT = "/Users/fabi/Documents/Vault/.obsidian/plugins/better-better-word-count";
 
 export default {
   input: "src/main.ts",
@@ -58,6 +58,7 @@ export default {
         { src: ["manifest.json"], dest: TEST_VAULT },
       ],
       flatten: true,
+      hook: "writeBundle",
     }),
   ],
 };

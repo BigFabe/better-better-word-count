@@ -26,7 +26,7 @@ export default class StatsManager {
     this.plugin = plugin;
     this.debounceChange = debounce(
       (text: string) => this.change(text),
-      50,
+      250,
       false
     );
 

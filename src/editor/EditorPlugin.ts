@@ -129,6 +129,8 @@ class SectionWordCountEditorPlugin implements PluginValue {
   }
 
   calculateLineCounts(state: EditorState, plugin: BetterWordCount) {
+    this.lineCounts = [];
+
     const stripComments = plugin.settings.countComments;
     let docStr = state.doc.toString();
 
